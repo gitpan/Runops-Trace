@@ -1,9 +1,15 @@
-bench.pl
 Changes
-lib/Runops/Trace.pm
+LICENSE
+MANIFEST
+META.yml
 Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
+README
+TODO
+Trace.xs
+bench.pl
+dist.ini
+dist.ini~
+lib/Runops/Trace.pm
 ppport.h
 t/01compile.t
 t/02mapstart.t
@@ -15,6 +21,7 @@ t/06counters.t
 t/07perl_Hook.t
 t/08fact.t
 t/09mask.t
-TODO
-Trace.xs
-META.yml                                 Module meta-data (added by MakeMaker)
+t/10aassign.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+weaver.ini

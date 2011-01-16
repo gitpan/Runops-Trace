@@ -1,4 +1,5 @@
 package Runops::Trace;
+# ABSTRACT: Trace your program's execution
 
 # vim:shiftwidth=4
 
@@ -8,7 +9,7 @@ use Digest::MD5  ();
 use File::Spec   ();
 use Scalar::Util ();
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use DynaLoader ();
 our @ISA = qw( DynaLoader Exporter );
@@ -77,11 +78,17 @@ sub _whatever_to_op_type {
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 Runops::Trace - Trace your program's execution
+
+=head1 VERSION
+
+version 0.14
 
 =head1 SYNOPSIS
 
@@ -281,4 +288,19 @@ Merged with Runops::Hook by Chia-Liang Kao and Yuval Kogman.
 This program is free software; you may redistribute it and/or modify
 it under the same terms as Perl 5.8.x itself.
 
+=head1 AUTHOR
+
+Josh Jore <jjore@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Josh Jore.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
+
+__END__
+
